@@ -54,6 +54,7 @@ namespace NinjectExample.Web.App_Start
             kernel.BindFilter<FilterAlpha>(FilterScope.Controller, 0)
                 .WhenControllerHas<AlphaAttribute>();
 
+            //kernel.BindFilter<FilterAlpha>(FilterScope.Global, 0);
             kernel.BindFilter<FilterBeta>(FilterScope.Global, 0);
         }		
     }
